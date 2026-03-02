@@ -1,0 +1,12 @@
+# Code Owners для Kokao Engine
+* @mrbritneyxxx/owners
+
+# Core модули
+src/kokao/core.py @mrbritneyxxx/owners
+src/kokao/evolve.py @mrbritneyxxx/owners
+src/kokao/learnable.py @mrbritneyxxx/owners
+
+# Мультимодальные модули
+src/kokao/clip.py @mrbritneyxxx/owners
+src/kokao/decoder.py @mrbritneyxxx/owners
+src/kokao/cf.py @mrbritneyxxx/owners

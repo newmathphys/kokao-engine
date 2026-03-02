@@ -1,0 +1,13 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include FULL_DESCRIPTION.md
+include ARCHITECTURE.md
+include MATH.md
+include MODULES_COMPLETE.md
+include DISCLAIMER.md
+recursive-include src/kokao *.py
+recursive-include tests *.py
+recursive-include templates *.html
+recursive-include demo *.py

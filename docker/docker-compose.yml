@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    command: uvicorn kokao.kokao_hub.api:app --host 0.0.0.0 --port 8000
+    volumes:
+      - ./src:/app/src
+    environment:
+      - PYTHONPATH=/app/src
+
+  test:
+    build: .
+    command: pytest tests/ -v
+    volumes:
+      - ./src:/app/src
+      - ./tests:/app/tests
+    environment:
+      - PYTHONPATH=/app/src
